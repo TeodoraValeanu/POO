@@ -8,7 +8,7 @@ using namespace std;
 
 class Carte
 {
-public:
+private:
 	char* titlu;
 	string autor;
 	int nr_pag;
@@ -18,7 +18,7 @@ public:
 
 
 	//constructor
-
+public:
 	Carte() {
 
 	}
