@@ -113,7 +113,18 @@ public:
 		return 0;
 	}
 
-	int main() 
+	
+
+	//destructor
+	~Product() {
+		delete[] name;
+		delete[] description;
+		delete[] priceHistory;
+	}
+
+};
+
+int main() 
 	{
 		/*Product p0;
 
@@ -137,14 +148,4 @@ public:
 
 		return 0;
 		
-	}
-
-	//destructor
-	~Product() {
-		delete[] name;
-		delete[] description;
-		delete[] priceHistory;
-	}
-
-};
-
+	};
